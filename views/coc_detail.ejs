@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>探索者詳細</title>
+</head>
+<body>
+    <h1><%= data.name %> のステータス</h1>
+    <ul>
+        <li><strong>ID:</strong> <%= data.id %></li>
+        <li><strong>名前:</strong> <%= data.name %></li>
+        <li><strong>職業:</strong> <%= data.job %></li>
+        <hr>
+        <li><strong>STR (筋力):</strong> <%= data.str %></li>
+        <li><strong>CON (体力):</strong> <%= data.con %></li>
+        <li><strong>POW (精神):</strong> <%= data.pow %></li>
+        <li><strong>DEX (敏捷):</strong> <%= data.dex %></li>
+        <li><strong>APP (外見):</strong> <%= data.app %></li>
+        <li><strong>SIZ (体格):</strong> <%= data.siz %></li>
+        <li><strong>INT (知性):</strong> <%= data.int %></li>
+        <li><strong>EDU (教育):</strong> <%= data.edu %></li>
+        <hr>
+        <li><strong>備考:</strong> <%= data.memo %></li>
+    </ul>
+    <a href="/coc">一覧に戻る</a>
+</body>
+</html>

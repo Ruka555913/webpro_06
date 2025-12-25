@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>編集</title>
+</head>
+<body>
+    <h1>情報を編集</h1>
+    <form action="/driver/update/<%= data.id %>" method="POST">
+        <div>
+            <label>型番(Code): </label>
+            <input type="text" name="code" value="<%= data.code %>" required>
+        </div>
+        <div>
+            <label>名前(Name): </label>
+            <input type="text" name="name" value="<%= data.name %>" required>
+        </div>
+        <div>
+            <label>コスト: </label>
+            <input type="text" name="cost" value="<%= data.cost %>">
+        </div>
+        <div>
+            <label>特徴: </label>
+            <textarea name="features"><%= data.features %></textarea>
+        </div>
+        <button type="submit">更新</button>
+    </form>
+    <a href="/driver">戻る</a>
+</body>
+</html>

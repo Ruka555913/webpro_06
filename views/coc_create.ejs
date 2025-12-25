@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>探索者作成</title>
+</head>
+<body>
+    <h1>新規探索者作成</h1>
+    <form action="/coc" method="POST">
+        <p>
+            <label>名前: </label><input type="text" name="name" required>
+            <label>職業: </label><input type="text" name="job" required>
+        </p>
+        <p>
+            STR:<input type="number" name="str" value="50" style="width:50px;">
+            CON:<input type="number" name="con" value="50" style="width:50px;">
+            POW:<input type="number" name="pow" value="50" style="width:50px;">
+            DEX:<input type="number" name="dex" value="50" style="width:50px;">
+        </p>
+        <p>
+            APP:<input type="number" name="app" value="50" style="width:50px;">
+            SIZ:<input type="number" name="siz" value="50" style="width:50px;">
+            INT:<input type="number" name="int" value="50" style="width:50px;">
+            EDU:<input type="number" name="edu" value="50" style="width:50px;">
+        </p>
+        <p>
+            <label>特徴・備考: </label><br>
+            <textarea name="memo" rows="4" cols="40"></textarea>
+        </p>
+        <button type="submit">登録</button>
+    </form>
+    <a href="/coc">戻る</a>
+</body>
+</html>
