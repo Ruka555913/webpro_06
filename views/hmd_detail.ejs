@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>詳細表示</title>
+</head>
+<body>
+    <h1><%= data.name %> の詳細</h1>
+    <ul>
+        <li><strong>ID:</strong> <%= data.id %></li>
+        <li><strong>製品名:</strong> <%= data.name %></li>
+        <li><strong>メーカー:</strong> <%= data.maker %></li>
+        <li><strong>価格:</strong> <%= data.price %>円</li>
+        <li><strong>解像度・スペック:</strong> <%= data.resolution %></li>
+        <li><strong>メモ:</strong> <%= data.memo %></li>
+    </ul>
+    <a href="/hmd">一覧に戻る</a>
+</body>
+</html>

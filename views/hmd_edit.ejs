@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>編集</title>
+</head>
+<body>
+    <h1>情報を編集</h1>
+    <form action="/hmd/update/<%= data.id %>" method="POST">
+        <div>
+            <label>製品名: </label>
+            <input type="text" name="name" value="<%= data.name %>" required>
+        </div>
+        <div>
+            <label>メーカー: </label>
+            <input type="text" name="maker" value="<%= data.maker %>" required>
+        </div>
+        <div>
+            <label>価格: </label>
+            <input type="number" name="price" value="<%= data.price %>">
+        </div>
+        <div>
+            <label>解像度・スペック: </label>
+            <input type="text" name="resolution" value="<%= data.resolution %>">
+        </div>
+        <div>
+            <label>メモ: </label>
+            <textarea name="memo"><%= data.memo %></textarea>
+        </div>
+        <button type="submit">更新</button>
+    </form>
+    <a href="/hmd">戻る</a>
+</body>
+</html>
